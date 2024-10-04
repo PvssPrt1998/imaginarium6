@@ -488,30 +488,84 @@ extension GameView {
                              ,alignment: .topLeading
                     )
                     .padding(.top, 13)
-                LazyVGrid(columns: [GridItem(.fixed(163), spacing: 10),GridItem(.fixed(163), spacing: 10)], spacing: 10) {
-                    ForEach(0..<viewModel.votePlayers.count, id: \.self) { i in
-                        HStack(spacing: 10) {
-                            Image(viewModel.votePlayers[i].imageTitle)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 67, height: 63)
-                            Text(viewModel.votePlayers[i].name)
-                                .font(.callout)
-                                .foregroundColor(.c10547143)
-                                .frame(maxWidth: 66, alignment: .leading)
+//                LazyVGrid(columns: [GridItem(.fixed(163), spacing: 10),GridItem(.fixed(163), spacing: 10)], spacing: 10) {
+//                    ForEach(0..<viewModel.votePlayers.count, id: \.self) { i in
+//                        HStack(spacing: 10) {
+//                            Image(viewModel.votePlayers[i].imageTitle)
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 67, height: 63)
+//                            Text(viewModel.votePlayers[i].name)
+//                                .font(.callout)
+//                                .foregroundColor(.c10547143)
+//                                .frame(maxWidth: 66, alignment: .leading)
+//                        }
+//                        .padding(10)
+//                        .background(Color.cSecondary)
+//                        .clipShape(.rect(cornerRadius: 15))
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 15)
+//                                .stroke(viewModel.checkPlayerSelect(i) ? .white : .clear, lineWidth: 3)
+//                        )
+//                        .onTapGesture {
+//                            viewModel.selectImageForPlayer(index, playerIndex: i)
+//                        }
+//                    }
+//                }
+                
+                VStack(spacing: 10) {
+                    HStack(spacing: 10) {
+                        ForEach(0..<min(viewModel.votePlayers.count, 2), id: \.self) { i in
+                            HStack(spacing: 10) {
+                                Image(viewModel.votePlayers[i].imageTitle)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 67, height: 63)
+                                Text(viewModel.votePlayers[i].name)
+                                    .font(.callout)
+                                    .foregroundColor(.c10547143)
+                                    .frame(maxWidth: 66, alignment: .leading)
+                            }
+                            .padding(10)
+                            .background(Color.cSecondary)
+                            .clipShape(.rect(cornerRadius: 15))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(viewModel.checkPlayerSelect(i) ? .white : .clear, lineWidth: 3)
+                            )
+                            .onTapGesture {
+                                viewModel.selectImageForPlayer(index, playerIndex: i)
+                            }
                         }
-                        .padding(10)
-                        .background(Color.cSecondary)
-                        .clipShape(.rect(cornerRadius: 15))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(viewModel.checkPlayerSelect(i) ? .white : .clear, lineWidth: 3)
-                        )
-                        .onTapGesture {
-                            viewModel.selectImageForPlayer(index, playerIndex: i)
+                    }
+                    if viewModel.votePlayers.count > 2 {
+                        HStack(spacing: 10) {
+                            ForEach(2..<viewModel.votePlayers.count, id: \.self) { i in
+                                HStack(spacing: 10) {
+                                    Image(viewModel.votePlayers[i].imageTitle)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 67, height: 63)
+                                    Text(viewModel.votePlayers[i].name)
+                                        .font(.callout)
+                                        .foregroundColor(.c10547143)
+                                        .frame(maxWidth: 66, alignment: .leading)
+                                }
+                                .padding(10)
+                                .background(Color.cSecondary)
+                                .clipShape(.rect(cornerRadius: 15))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .stroke(viewModel.checkPlayerSelect(i) ? .white : .clear, lineWidth: 3)
+                                )
+                                .onTapGesture {
+                                    viewModel.selectImageForPlayer(index, playerIndex: i)
+                                }
+                            }
                         }
                     }
                 }
+                
                 .frame(maxHeight: 230)
                 .padding(.top, 18)
                 

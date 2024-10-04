@@ -31,7 +31,6 @@
 		99B3A9B42CABFE93007A3425 /* GuideScreen7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B32CABFE93007A3425 /* GuideScreen7.swift */; };
 		99B3A9B72CAC063B007A3425 /* HandThePhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B62CAC063B007A3425 /* HandThePhoneView.swift */; };
 		99B3A9B92CAC0F14007A3425 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B82CAC0F14007A3425 /* GameView.swift */; };
-		99B3A9BD2CAD23A3007A3425 /* VoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9BC2CAD23A3007A3425 /* VoteView.swift */; };
 		99B3A9C12CAD628B007A3425 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9C02CAD628B007A3425 /* LoadingView.swift */; };
 		99B3A9C32CAD7C3C007A3425 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99B3A9C22CAD7C3C007A3425 /* music.mp3 */; };
 		99C88A5C2CAEC58E00C281FD /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C88A5B2CAEC58E00C281FD /* Keyboard.swift */; };
@@ -63,7 +62,6 @@
 		99B3A9B32CABFE93007A3425 /* GuideScreen7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen7.swift; sourceTree = "<group>"; };
 		99B3A9B62CAC063B007A3425 /* HandThePhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandThePhoneView.swift; sourceTree = "<group>"; };
 		99B3A9B82CAC0F14007A3425 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		99B3A9BC2CAD23A3007A3425 /* VoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteView.swift; sourceTree = "<group>"; };
 		99B3A9C02CAD628B007A3425 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		99B3A9C22CAD7C3C007A3425 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		99C88A5B2CAEC58E00C281FD /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 			children = (
 				99B3A9B62CAC063B007A3425 /* HandThePhoneView.swift */,
 				99B3A9B82CAC0F14007A3425 /* GameView.swift */,
-				99B3A9BC2CAD23A3007A3425 /* VoteView.swift */,
 			);
 			path = GameScreens;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 				99B3A9B72CAC063B007A3425 /* HandThePhoneView.swift in Sources */,
 				99B3A9AA2CABFE5F007A3425 /* GuideScreen2.swift in Sources */,
 				9982FDE62CA994D200E5343A /* HomeViewModel.swift in Sources */,
-				99B3A9BD2CAD23A3007A3425 /* VoteView.swift in Sources */,
 				99B3A9C12CAD628B007A3425 /* LoadingView.swift in Sources */,
 				9982FDEF2CA99E2000E5343A /* EnvironmentalValues.swift in Sources */,
 				99B3A9A32CABE3B9007A3425 /* AddPlayersView.swift in Sources */,
@@ -443,7 +439,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: A Game of Imagination";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: Jenny Guesses";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,7 +459,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,7 +474,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: A Game of Imagination";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: Jenny Guesses";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,7 +494,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
