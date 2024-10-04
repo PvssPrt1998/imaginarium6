@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "broadapps_87741_Illustration_on_the_theme_of_the_world_of_the_g_c4a966ed-4da1-4bfd-a7ce-c3c3f3633977.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

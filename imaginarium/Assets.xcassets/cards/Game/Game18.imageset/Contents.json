@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "broadapps_87741_Illustration_on_the_theme_of_the_world_of_games_fb2445f5-973c-4357-8a99-9537e4094193.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

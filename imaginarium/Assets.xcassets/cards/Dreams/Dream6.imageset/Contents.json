@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "broadapps_87741_Cartoon-style_illustration_on_the_theme_of_the__d2b0aa6b-7867-4806-bf62-f2b9a2ae38fa.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

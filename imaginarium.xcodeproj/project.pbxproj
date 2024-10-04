@@ -11,6 +11,30 @@
 		9982FDCC2CA98A4D00E5343A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDCB2CA98A4D00E5343A /* ContentView.swift */; };
 		9982FDCE2CA98A5000E5343A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9982FDCD2CA98A5000E5343A /* Assets.xcassets */; };
 		9982FDD12CA98A5000E5343A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9982FDD02CA98A5000E5343A /* Preview Assets.xcassets */; };
+		9982FDDC2CA98C4800E5343A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDDB2CA98C4800E5343A /* HomeView.swift */; };
+		9982FDDE2CA98D1F00E5343A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDDD2CA98D1F00E5343A /* Images.swift */; };
+		9982FDE42CA9936E00E5343A /* hPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDE32CA9936E00E5343A /* hPadding.swift */; };
+		9982FDE62CA994D200E5343A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDE52CA994D200E5343A /* HomeViewModel.swift */; };
+		9982FDE82CA9952300E5343A /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDE72CA9952300E5343A /* Source.swift */; };
+		9982FDEB2CA9956800E5343A /* CategoriesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDEA2CA9956800E5343A /* CategoriesEnum.swift */; };
+		9982FDED2CA996C600E5343A /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDEC2CA996C600E5343A /* CategoryCard.swift */; };
+		9982FDEF2CA99E2000E5343A /* EnvironmentalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDEE2CA99E2000E5343A /* EnvironmentalValues.swift */; };
+		9982FDF22CA9A3C900E5343A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDF12CA9A3C900E5343A /* SettingsView.swift */; };
+		99B3A9A32CABE3B9007A3425 /* AddPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9A22CABE3B9007A3425 /* AddPlayersView.swift */; };
+		99B3A9A52CABF367007A3425 /* AddPlayerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9A42CABF367007A3425 /* AddPlayerTextField.swift */; };
+		99B3A9A82CABFE3F007A3425 /* GuideScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9A72CABFE3F007A3425 /* GuideScreen1.swift */; };
+		99B3A9AA2CABFE5F007A3425 /* GuideScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9A92CABFE5F007A3425 /* GuideScreen2.swift */; };
+		99B3A9AC2CABFE6A007A3425 /* GuideScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9AB2CABFE6A007A3425 /* GuideScreen3.swift */; };
+		99B3A9AE2CABFE75007A3425 /* GuideScreen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9AD2CABFE75007A3425 /* GuideScreen4.swift */; };
+		99B3A9B02CABFE7F007A3425 /* GuideScreen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9AF2CABFE7F007A3425 /* GuideScreen5.swift */; };
+		99B3A9B22CABFE89007A3425 /* GuideScreen6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B12CABFE89007A3425 /* GuideScreen6.swift */; };
+		99B3A9B42CABFE93007A3425 /* GuideScreen7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B32CABFE93007A3425 /* GuideScreen7.swift */; };
+		99B3A9B72CAC063B007A3425 /* HandThePhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B62CAC063B007A3425 /* HandThePhoneView.swift */; };
+		99B3A9B92CAC0F14007A3425 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9B82CAC0F14007A3425 /* GameView.swift */; };
+		99B3A9BD2CAD23A3007A3425 /* VoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9BC2CAD23A3007A3425 /* VoteView.swift */; };
+		99B3A9C12CAD628B007A3425 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3A9C02CAD628B007A3425 /* LoadingView.swift */; };
+		99B3A9C32CAD7C3C007A3425 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 99B3A9C22CAD7C3C007A3425 /* music.mp3 */; };
+		99C88A5C2CAEC58E00C281FD /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C88A5B2CAEC58E00C281FD /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +43,30 @@
 		9982FDCB2CA98A4D00E5343A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9982FDCD2CA98A5000E5343A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9982FDD02CA98A5000E5343A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9982FDDB2CA98C4800E5343A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9982FDDD2CA98D1F00E5343A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		9982FDE32CA9936E00E5343A /* hPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hPadding.swift; sourceTree = "<group>"; };
+		9982FDE52CA994D200E5343A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9982FDE72CA9952300E5343A /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		9982FDEA2CA9956800E5343A /* CategoriesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEnum.swift; sourceTree = "<group>"; };
+		9982FDEC2CA996C600E5343A /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
+		9982FDEE2CA99E2000E5343A /* EnvironmentalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalValues.swift; sourceTree = "<group>"; };
+		9982FDF12CA9A3C900E5343A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		99B3A9A22CABE3B9007A3425 /* AddPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayersView.swift; sourceTree = "<group>"; };
+		99B3A9A42CABF367007A3425 /* AddPlayerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTextField.swift; sourceTree = "<group>"; };
+		99B3A9A72CABFE3F007A3425 /* GuideScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen1.swift; sourceTree = "<group>"; };
+		99B3A9A92CABFE5F007A3425 /* GuideScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen2.swift; sourceTree = "<group>"; };
+		99B3A9AB2CABFE6A007A3425 /* GuideScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen3.swift; sourceTree = "<group>"; };
+		99B3A9AD2CABFE75007A3425 /* GuideScreen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen4.swift; sourceTree = "<group>"; };
+		99B3A9AF2CABFE7F007A3425 /* GuideScreen5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen5.swift; sourceTree = "<group>"; };
+		99B3A9B12CABFE89007A3425 /* GuideScreen6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen6.swift; sourceTree = "<group>"; };
+		99B3A9B32CABFE93007A3425 /* GuideScreen7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScreen7.swift; sourceTree = "<group>"; };
+		99B3A9B62CAC063B007A3425 /* HandThePhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandThePhoneView.swift; sourceTree = "<group>"; };
+		99B3A9B82CAC0F14007A3425 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		99B3A9BC2CAD23A3007A3425 /* VoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteView.swift; sourceTree = "<group>"; };
+		99B3A9C02CAD628B007A3425 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		99B3A9C22CAD7C3C007A3425 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		99C88A5B2CAEC58E00C281FD /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +99,14 @@
 		9982FDC82CA98A4D00E5343A /* imaginarium */ = {
 			isa = PBXGroup;
 			children = (
+				9982FDE92CA9954900E5343A /* Source */,
+				9982FDE22CA9935C00E5343A /* Helpers */,
+				9982FDD72CA98C0B00E5343A /* Screens */,
 				9982FDC92CA98A4D00E5343A /* imaginariumApp.swift */,
 				9982FDCB2CA98A4D00E5343A /* ContentView.swift */,
 				9982FDCD2CA98A5000E5343A /* Assets.xcassets */,
 				9982FDCF2CA98A5000E5343A /* Preview Content */,
+				9982FDDD2CA98D1F00E5343A /* Images.swift */,
 			);
 			path = imaginarium;
 			sourceTree = "<group>";
@@ -65,6 +117,98 @@
 				9982FDD02CA98A5000E5343A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9982FDD72CA98C0B00E5343A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				99B3A9BF2CAD6282007A3425 /* Loading */,
+				99B3A9B52CAC05F8007A3425 /* GameScreens */,
+				99B3A9A62CABFE21007A3425 /* GuideScreens */,
+				99B3A99F2CABE395007A3425 /* AddPlayersScreen */,
+				9982FDF02CA9A3AE00E5343A /* SettingsScreen */,
+				9982FDD82CA98C2000E5343A /* HomeScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9982FDD82CA98C2000E5343A /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9982FDDB2CA98C4800E5343A /* HomeView.swift */,
+				9982FDE52CA994D200E5343A /* HomeViewModel.swift */,
+				9982FDEC2CA996C600E5343A /* CategoryCard.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		9982FDE22CA9935C00E5343A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9982FDE32CA9936E00E5343A /* hPadding.swift */,
+				9982FDEE2CA99E2000E5343A /* EnvironmentalValues.swift */,
+				99C88A5B2CAEC58E00C281FD /* Keyboard.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9982FDE92CA9954900E5343A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				99B3A9C22CAD7C3C007A3425 /* music.mp3 */,
+				9982FDE72CA9952300E5343A /* Source.swift */,
+				9982FDEA2CA9956800E5343A /* CategoriesEnum.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9982FDF02CA9A3AE00E5343A /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9982FDF12CA9A3C900E5343A /* SettingsView.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		99B3A99F2CABE395007A3425 /* AddPlayersScreen */ = {
+			isa = PBXGroup;
+			children = (
+				99B3A9A22CABE3B9007A3425 /* AddPlayersView.swift */,
+				99B3A9A42CABF367007A3425 /* AddPlayerTextField.swift */,
+			);
+			path = AddPlayersScreen;
+			sourceTree = "<group>";
+		};
+		99B3A9A62CABFE21007A3425 /* GuideScreens */ = {
+			isa = PBXGroup;
+			children = (
+				99B3A9A72CABFE3F007A3425 /* GuideScreen1.swift */,
+				99B3A9A92CABFE5F007A3425 /* GuideScreen2.swift */,
+				99B3A9AB2CABFE6A007A3425 /* GuideScreen3.swift */,
+				99B3A9AD2CABFE75007A3425 /* GuideScreen4.swift */,
+				99B3A9AF2CABFE7F007A3425 /* GuideScreen5.swift */,
+				99B3A9B12CABFE89007A3425 /* GuideScreen6.swift */,
+				99B3A9B32CABFE93007A3425 /* GuideScreen7.swift */,
+			);
+			path = GuideScreens;
+			sourceTree = "<group>";
+		};
+		99B3A9B52CAC05F8007A3425 /* GameScreens */ = {
+			isa = PBXGroup;
+			children = (
+				99B3A9B62CAC063B007A3425 /* HandThePhoneView.swift */,
+				99B3A9B82CAC0F14007A3425 /* GameView.swift */,
+				99B3A9BC2CAD23A3007A3425 /* VoteView.swift */,
+			);
+			path = GameScreens;
+			sourceTree = "<group>";
+		};
+		99B3A9BF2CAD6282007A3425 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				99B3A9C02CAD628B007A3425 /* LoadingView.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B3A9C32CAD7C3C007A3425 /* music.mp3 in Resources */,
 				9982FDD12CA98A5000E5343A /* Preview Assets.xcassets in Resources */,
 				9982FDCE2CA98A5000E5343A /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +282,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9982FDDC2CA98C4800E5343A /* HomeView.swift in Sources */,
+				99B3A9B72CAC063B007A3425 /* HandThePhoneView.swift in Sources */,
+				99B3A9AA2CABFE5F007A3425 /* GuideScreen2.swift in Sources */,
+				9982FDE62CA994D200E5343A /* HomeViewModel.swift in Sources */,
+				99B3A9BD2CAD23A3007A3425 /* VoteView.swift in Sources */,
+				99B3A9C12CAD628B007A3425 /* LoadingView.swift in Sources */,
+				9982FDEF2CA99E2000E5343A /* EnvironmentalValues.swift in Sources */,
+				99B3A9A32CABE3B9007A3425 /* AddPlayersView.swift in Sources */,
+				99B3A9A52CABF367007A3425 /* AddPlayerTextField.swift in Sources */,
+				99B3A9B42CABFE93007A3425 /* GuideScreen7.swift in Sources */,
+				9982FDEB2CA9956800E5343A /* CategoriesEnum.swift in Sources */,
+				99B3A9A82CABFE3F007A3425 /* GuideScreen1.swift in Sources */,
+				9982FDED2CA996C600E5343A /* CategoryCard.swift in Sources */,
+				9982FDDE2CA98D1F00E5343A /* Images.swift in Sources */,
+				99B3A9B22CABFE89007A3425 /* GuideScreen6.swift in Sources */,
+				9982FDE82CA9952300E5343A /* Source.swift in Sources */,
+				9982FDE42CA9936E00E5343A /* hPadding.swift in Sources */,
 				9982FDCC2CA98A4D00E5343A /* ContentView.swift in Sources */,
+				99B3A9B92CAC0F14007A3425 /* GameView.swift in Sources */,
 				9982FDCA2CA98A4D00E5343A /* imaginariumApp.swift in Sources */,
+				99B3A9AE2CABFE75007A3425 /* GuideScreen4.swift in Sources */,
+				99B3A9AC2CABFE6A007A3425 /* GuideScreen3.swift in Sources */,
+				99C88A5C2CAEC58E00C281FD /* Keyboard.swift in Sources */,
+				99B3A9B02CABFE7F007A3425 /* GuideScreen5.swift in Sources */,
+				9982FDF22CA9A3C900E5343A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -272,13 +440,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"imaginarium/Preview Content\"";
+				DEVELOPMENT_TEAM = KR7D477LDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: A Game of Imagination";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +457,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nobody.imaginarium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,13 +475,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"imaginarium/Preview Content\"";
+				DEVELOPMENT_TEAM = KR7D477LDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: A Game of Imagination";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +492,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nobody.imaginarium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
