@@ -559,7 +559,7 @@
 			);
 			currentVersion = 9937B6572CB6A68800D665FD /* SettingsData.xcdatamodel */;
 			name = SettingsData.xcdatamodeld;
-			path = /Users/lucifer/Documents/SwiftProjects/imaginarium/imaginarium/Source/SettingsData.xcdatamodeld;
+			path = SettingsData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
