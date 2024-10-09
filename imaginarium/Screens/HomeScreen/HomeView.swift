@@ -4,6 +4,7 @@ struct HomeView: View {
     
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     
+    @AppStorage("firstLaunchEvent") var firstLaunchEvent = true
     @ObservedObject var viewModel: HomeViewModel
     
     var body: some View {
@@ -30,15 +31,57 @@ struct HomeView: View {
                         .foregroundColor(.c10547143)
                         .padding(.vertical, 10)
                         .frame(maxWidth: .infinity)
-                        .background(Color.c238225255.opacity(viewModel.selected.count > 0 ? 1 : 0.5))
+                        .background(
+                            LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom)
+                        )
                         .clipShape(.rect(cornerRadius: 10))
                 }
                 .disabled(viewModel.selected.count <= 0)
+                .opacity(viewModel.selected.count > 0 ? 1 : 0.5)
                 .padding(.horizontal, hPadding())
                 .padding(.bottom, 8)
                 .frame(maxHeight: .infinity, alignment: .bottom)
+                
+                if firstLaunchEvent {
+                    showFirstLaunchEvent()
+                        .onTapGesture {
+                            withAnimation {
+                                firstLaunchEvent = false
+                            }
+                        }
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                                withAnimation {
+                                    firstLaunchEvent = false
+                                }
+                            }
+                        }
+                }
             }
         }
+        .onAppear {
+            AppDelegate.orientationLock = .portrait
+        }
+    }
+    
+    private func showFirstLaunchEvent() -> some View {
+        ZStack {
+            Image("EventMessageBg")
+                .resizable()
+                .ignoresSafeArea()
+            VStack {
+                Text("We've got great news!\n")
+                    .font(.largeTitle.bold())
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                Text("Added you a cool set of space\ncards that are now always\navailable to play. The set includes\n10 unique cards for your game")
+                    .font(.title2.bold())
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+            }
+            .padding(EdgeInsets(top: 0, leading: hPadding(), bottom: 175, trailing: hPadding()))
+        }
+        
     }
     
     private func addPlayersView() -> some View {
@@ -58,11 +101,11 @@ extension HomeView {
                 Text("Welcome to\nLucky Moments")
                     .multilineTextAlignment(.center)
                     .font(.largeTitle.weight(.bold))
-                    .foregroundColor(.c10547143)
+                    .foregroundColor(.white)
                 Text("Choose which categories\nyou want to play in")
                     .multilineTextAlignment(.center)
                     .font(.body)
-                    .foregroundColor(.c10547143)
+                    .foregroundColor(.white)
             }
             .padding(.top, 23)
             .frame(maxHeight: .infinity, alignment: .top)

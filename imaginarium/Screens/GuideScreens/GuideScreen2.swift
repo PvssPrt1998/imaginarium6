@@ -32,14 +32,14 @@ struct GuideScreen2: View {
                     HStack(spacing: 10) {
                         Image(systemName: "checkmark")
                             .font(.system(size: 24, weight: .regular))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                         Text("Okey")
                             .font(.custom("Rubik", size: 14).weight(.medium))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                     }
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)
-                    .background(Color.white)
+                    .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
                     .clipShape(.rect(cornerRadius: 10))
                 }
             }

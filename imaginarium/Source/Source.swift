@@ -82,3 +82,75 @@ struct Player: Hashable {
     var pickedCard: String = ""
 }
 
+import Foundation
+import CoreData
+
+class CDSk {
+    
+    private let modelName: String
+    
+    init(modelName: String) {
+        self.modelName = modelName
+    }
+    
+    lazy var managedContext: NSManagedObjectContext = {
+        return self.storeContainer.viewContext
+    }()
+    
+    private lazy var storeContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: modelName)
+        container.loadPersistentStores { _, error in
+            if let error = error as NSError? {
+                return print("Unresolved error \(error), \(error.userInfo)")
+            }
+        }
+        return container
+    }()
+    
+    func saveContext() {
+        guard managedContext.hasChanges else { return }
+        
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Unresolved error \(error), \(error.userInfo)")
+        }
+    }
+}
+
+final class CoreDataManager {
+    private let modelName = "SettingsData"
+    
+    lazy var coreDataStack = CDSk(modelName: modelName)
+    
+    func editAlways(_ select: Bool) {
+        do {
+            let ids = try coreDataStack.managedContext.fetch(AlwaysSelect.fetchRequest())
+            if ids.count > 0 {
+                //exists
+                ids[0].select = select
+            } else {
+                let alwaysSelect = AlwaysSelect(context: coreDataStack.managedContext)
+                alwaysSelect.select = select
+            }
+            coreDataStack.saveContext()
+        } catch let error as NSError {
+            print("Unresolved error \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchAlways() throws -> Bool? {
+        guard let totalNumber = try coreDataStack.managedContext.fetch(AlwaysSelect.fetchRequest()).first else { return nil }
+        return totalNumber.select
+    }
+    
+    func fetchSelected() throws -> String? {
+        guard let totalNumber = try coreDataStack.managedContext.fetch(CategorySelected.fetchRequest()).first else { return nil }
+        return totalNumber.category
+    }
+    
+    func createGameSettingsObject() {
+        let settingsObject = CategorySelected(context: coreDataStack.managedContext)
+        coreDataStack.saveContext()
+    }
+}

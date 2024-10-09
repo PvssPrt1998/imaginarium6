@@ -56,10 +56,10 @@ struct AddPlayersView: View {
             } label: {
                 Text("Play")
                     .font(.largeTitle.weight(.bold))
-                    .foregroundColor(.c10547143)
+                    .foregroundColor(.white)
                     .padding(.vertical, 10)
                     .frame(maxWidth: .infinity)
-                    .background(Color.c238225255)
+                    .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
                     .clipShape(.rect(cornerRadius: 10))
             }
             .opacity(viewModel.playButtonDisabled() ? 0.5 : 1)
@@ -74,7 +74,7 @@ struct AddPlayersView: View {
             } label: {
                 Image(systemName: "arrow.left")
                     .font(.system(size: 24, weight: .regular))
-                    .foregroundColor(.c10547143)
+                    .foregroundColor(.white)
             }
             .padding(EdgeInsets(top: 48, leading: 28, bottom: 0, trailing: 28))
             .frame(maxWidth: .infinity, maxHeight: .infinity ,alignment: .topLeading)
@@ -100,11 +100,11 @@ extension AddPlayersView {
             VStack(spacing: 10) {
                 Text("Add players")
                     .font(.largeTitle.weight(.bold))
-                    .foregroundColor(.c10547143)
+                    .foregroundColor(.white)
                 Text("This game can be played\nby 2 to 4 players")
                     .multilineTextAlignment(.center)
                     .font(.body)
-                    .foregroundColor(.c10547143)
+                    .foregroundColor(.white)
             }
             .padding(.top, 45)
             .frame(maxHeight: .infinity, alignment: .top)
@@ -121,14 +121,14 @@ extension AddPlayersView {
             HStack(spacing: 10) {
                 Image(systemName: "plus")
                     .font(.system(size: 24, weight: .regular))
-                    .foregroundColor(Color.c10547143)
+                    .foregroundColor(Color.white)
                 Text("Add players")
                     .font(.custom("Rubik", size: 14).weight(.medium))
-                    .foregroundColor(.c10690224)
+                    .foregroundColor(.white)
             }
             .padding(.vertical, 12)
             .frame(maxWidth: .infinity)
-            .background(Color.white)
+            .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
             .clipShape(.rect(cornerRadius: 10))
         }
         .opacity(viewModel.players.count >= 4 ? 0 : 1)
@@ -145,9 +145,12 @@ extension AddPlayersView {
                     Button {
                         viewModel.removePlayer(index)
                     } label: {
-                        Image(systemName: "trash.fill")
-                            .font(.system(size: 24, weight: .regular))
-                            .foregroundColor(.white)
+                        LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom)
+                            .mask(Image(systemName: "trash.fill")
+                                .font(.system(size: 24, weight: .regular))
+                                .foregroundColor(.white))
+                            .frame(width: 27, height: 29)
+                        
                     }
                 }
             }

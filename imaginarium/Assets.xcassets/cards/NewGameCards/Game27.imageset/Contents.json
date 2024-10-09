@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "broadapps_87741_spacesuit_elements_on_the_suit_full-length_chib_e648bb2a-48c9-426e-9581-c52cb26d38d0.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

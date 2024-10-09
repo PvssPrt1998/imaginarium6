@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9937B6582CB6A68800D665FD /* SettingsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9937B6562CB6A68800D665FD /* SettingsData.xcdatamodeld */; };
+		9937B6652CB6AF5300D665FD /* CategorySelected+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937B6612CB6AF5300D665FD /* CategorySelected+CoreDataClass.swift */; };
+		9937B6662CB6AF5300D665FD /* CategorySelected+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937B6622CB6AF5300D665FD /* CategorySelected+CoreDataProperties.swift */; };
+		9937B6672CB6AF5300D665FD /* AlwaysSelect+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937B6632CB6AF5300D665FD /* AlwaysSelect+CoreDataClass.swift */; };
+		9937B6682CB6AF5300D665FD /* AlwaysSelect+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937B6642CB6AF5300D665FD /* AlwaysSelect+CoreDataProperties.swift */; };
+		9937B66A2CB6BA4700D665FD /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937B6692CB6BA4700D665FD /* GalleryView.swift */; };
+		9937B66C2CB6BF2C00D665FD /* DrawingPath1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9937B66B2CB6BF2C00D665FD /* DrawingPath1.swift */; };
 		9982FDCA2CA98A4D00E5343A /* imaginariumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDC92CA98A4D00E5343A /* imaginariumApp.swift */; };
 		9982FDCC2CA98A4D00E5343A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9982FDCB2CA98A4D00E5343A /* ContentView.swift */; };
 		9982FDCE2CA98A5000E5343A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9982FDCD2CA98A5000E5343A /* Assets.xcassets */; };
@@ -37,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9937B6572CB6A68800D665FD /* SettingsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SettingsData.xcdatamodel; sourceTree = "<group>"; };
+		9937B6612CB6AF5300D665FD /* CategorySelected+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategorySelected+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9937B6622CB6AF5300D665FD /* CategorySelected+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategorySelected+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9937B6632CB6AF5300D665FD /* AlwaysSelect+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlwaysSelect+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9937B6642CB6AF5300D665FD /* AlwaysSelect+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlwaysSelect+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9937B6692CB6BA4700D665FD /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		9937B66B2CB6BF2C00D665FD /* DrawingPath1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPath1.swift; sourceTree = "<group>"; };
 		9982FDC62CA98A4D00E5343A /* imaginarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imaginarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9982FDC92CA98A4D00E5343A /* imaginariumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imaginariumApp.swift; sourceTree = "<group>"; };
 		9982FDCB2CA98A4D00E5343A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,9 +167,14 @@
 		9982FDE92CA9954900E5343A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9937B6612CB6AF5300D665FD /* CategorySelected+CoreDataClass.swift */,
+				9937B6622CB6AF5300D665FD /* CategorySelected+CoreDataProperties.swift */,
+				9937B6632CB6AF5300D665FD /* AlwaysSelect+CoreDataClass.swift */,
+				9937B6642CB6AF5300D665FD /* AlwaysSelect+CoreDataProperties.swift */,
 				99B3A9C22CAD7C3C007A3425 /* music.mp3 */,
 				9982FDE72CA9952300E5343A /* Source.swift */,
 				9982FDEA2CA9956800E5343A /* CategoriesEnum.swift */,
+				9937B6562CB6A68800D665FD /* SettingsData.xcdatamodeld */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -164,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				9982FDF12CA9A3C900E5343A /* SettingsView.swift */,
+				9937B6692CB6BA4700D665FD /* GalleryView.swift */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -204,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				99B3A9C02CAD628B007A3425 /* LoadingView.swift */,
+				9937B66B2CB6BF2C00D665FD /* DrawingPath1.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -285,6 +306,7 @@
 				9982FDE62CA994D200E5343A /* HomeViewModel.swift in Sources */,
 				99B3A9C12CAD628B007A3425 /* LoadingView.swift in Sources */,
 				9982FDEF2CA99E2000E5343A /* EnvironmentalValues.swift in Sources */,
+				9937B6582CB6A68800D665FD /* SettingsData.xcdatamodeld in Sources */,
 				99B3A9A32CABE3B9007A3425 /* AddPlayersView.swift in Sources */,
 				99B3A9A52CABF367007A3425 /* AddPlayerTextField.swift in Sources */,
 				99B3A9B42CABFE93007A3425 /* GuideScreen7.swift in Sources */,
@@ -297,12 +319,18 @@
 				9982FDE42CA9936E00E5343A /* hPadding.swift in Sources */,
 				9982FDCC2CA98A4D00E5343A /* ContentView.swift in Sources */,
 				99B3A9B92CAC0F14007A3425 /* GameView.swift in Sources */,
+				9937B66A2CB6BA4700D665FD /* GalleryView.swift in Sources */,
 				9982FDCA2CA98A4D00E5343A /* imaginariumApp.swift in Sources */,
 				99B3A9AE2CABFE75007A3425 /* GuideScreen4.swift in Sources */,
 				99B3A9AC2CABFE6A007A3425 /* GuideScreen3.swift in Sources */,
 				99C88A5C2CAEC58E00C281FD /* Keyboard.swift in Sources */,
 				99B3A9B02CABFE7F007A3425 /* GuideScreen5.swift in Sources */,
+				9937B6652CB6AF5300D665FD /* CategorySelected+CoreDataClass.swift in Sources */,
+				9937B6662CB6AF5300D665FD /* CategorySelected+CoreDataProperties.swift in Sources */,
+				9937B6672CB6AF5300D665FD /* AlwaysSelect+CoreDataClass.swift in Sources */,
+				9937B6682CB6AF5300D665FD /* AlwaysSelect+CoreDataProperties.swift in Sources */,
 				9982FDF22CA9A3C900E5343A /* SettingsView.swift in Sources */,
+				9937B66C2CB6BF2C00D665FD /* DrawingPath1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,12 +467,13 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: Jenny Guesses";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Jenny: Moments";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,12 +503,13 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Moments: Jenny Guesses";
+				INFOPLIST_KEY_CFBundleDisplayName = "Lucky Jenny: Moments";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,6 +550,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9937B6562CB6A68800D665FD /* SettingsData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9937B6572CB6A68800D665FD /* SettingsData.xcdatamodel */,
+			);
+			currentVersion = 9937B6572CB6A68800D665FD /* SettingsData.xcdatamodel */;
+			name = SettingsData.xcdatamodeld;
+			path = /Users/lucifer/Documents/SwiftProjects/imaginarium/imaginarium/Source/SettingsData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9982FDBE2CA98A4D00E5343A /* Project object */;
 }

@@ -20,7 +20,7 @@ struct AddPlayerTextField: View {
             .clipShape(.rect(cornerRadius: 12))
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
-                    .stroke(.white, lineWidth: 1)
+                    .stroke(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom), lineWidth: 1)
             )
     }
     

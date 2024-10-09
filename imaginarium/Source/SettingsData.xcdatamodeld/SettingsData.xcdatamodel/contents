@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AlwaysSelect" representedClassName=".AlwaysSelect" syncable="YES">
+        <attribute name="select" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CategorySelected" representedClassName=".CategorySelected" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" defaultValueString="prefixCustom1dividerCustom2textCustom3spacerCustom4imageCustom5"/>
+    </entity>
+</model>

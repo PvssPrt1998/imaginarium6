@@ -4,7 +4,7 @@ final class HomeViewModel: ObservableObject {
     
     let source: Source
     
-    @Published var selected: Set<Category> = []
+    @Published var selected: Set<Category> = [.theWorldOfGaming]
     
     init(source: Source) {
         self.source = source
@@ -15,7 +15,7 @@ final class HomeViewModel: ObservableObject {
     }
     
     func select(_ category: Category) {
-        if selected.contains(category) {
+        if selected.contains(category) && category != .theWorldOfGaming {
             selected.remove(category)
         } else {
             selected.insert(category)

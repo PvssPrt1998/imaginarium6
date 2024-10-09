@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "broadapps_87741_elements_of_a_spacesuit_on_the_suit_a_full-leng_e4601216-f644-4d40-ac34-507899471b2f.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

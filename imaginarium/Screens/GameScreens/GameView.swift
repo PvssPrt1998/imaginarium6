@@ -30,6 +30,8 @@ struct GameView: View {
 
 final class GameViewModel: ObservableObject {
     
+    @AppStorage("firstLaunchImages") var firstLaunchImages = true
+    
     enum Stage {
         case handThePhone
         case playerPick
@@ -161,6 +163,11 @@ final class GameViewModel: ObservableObject {
     }
     private func configureImageTitles() {
         if source.selectedCategories.contains(.theWorldOfGaming) {
+            for i in 21...31 {
+                gameImageTitles.append("Game\(i)")
+            }
+        }
+        if source.selectedCategories.contains(.theWorldOfGaming) {
             for i in 1...20 {
                 gameImageTitles.append("Game\(i)")
             }
@@ -176,16 +183,33 @@ final class GameViewModel: ObservableObject {
             }
         }
         
+        if !firstLaunchImages {
+            gameImageTitles.shuffle()
+        } else {
+            firstLaunchImages = false
+        }
+        
+        if players.count == 2 {
+            gameImageTitles.removeLast()
+        }
+        
         if players.count == 3 {
-            if gameImageTitles.count == 20 {
-                gameImageTitles.removeLast()
+            if gameImageTitles.count == 31 {
                 gameImageTitles.removeLast()
             }
-            if gameImageTitles.count == 40 {
+            
+            if gameImageTitles.count == 71 {
+                gameImageTitles.removeLast()
                 gameImageTitles.removeLast()
             }
         }
-        gameImageTitles.shuffle()
+        if players.count == 4 {
+            if gameImageTitles.count == 31 || gameImageTitles.count == 51 || gameImageTitles.count == 71 {
+                gameImageTitles.removeLast()
+                gameImageTitles.removeLast()
+                gameImageTitles.removeLast()
+            }
+        }
     }
     
     func startVotingButtonPressed() {
@@ -364,14 +388,14 @@ extension GameView {
                         HStack(spacing: 10) {
                             Image(systemName: "checkmark")
                                 .font(.system(size: 24, weight: .heavy))
-                                .foregroundColor(.c10547143)
+                                .foregroundColor(.white)
                             Text("GO")
                                 .font(.custom("Rubik", size: 14).weight(.medium))
-                                .foregroundColor(.c10547143)
+                                .foregroundColor(.white)
                         }
                         .padding(.vertical, 12)
                         .frame(maxWidth: .infinity)
-                        .background(Color.white)
+                        .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
                         .clipShape(.rect(cornerRadius: 10))
                     }
                     .padding(.bottom, 8)
@@ -413,9 +437,11 @@ extension GameView {
                             Image(viewModel.selectedImages[index])
                                 .resizable()
                                 .scaledToFit()
-                                .overlay(Text("\(index + 1)")
-                                    .font(.largeTitle.weight(.bold))
-                                    .foregroundColor(.white)
+                                .overlay(
+                                    LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom)
+                                        .mask(Text("\(index + 1)")
+                                            .font(.largeTitle.weight(.bold)))
+                                        .frame(width: 25, height: 41)
                                     .padding(8)
                                          ,alignment: .topLeading
                                 )
@@ -428,9 +454,11 @@ extension GameView {
                                 Image(viewModel.selectedImages[index])
                                     .resizable()
                                     .scaledToFit()
-                                    .overlay(Text("\(index + 1)")
-                                        .font(.largeTitle.weight(.bold))
-                                        .foregroundColor(.white)
+                                    .overlay(
+                                        LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom)
+                                            .mask(Text("\(index + 1)")
+                                                .font(.largeTitle.weight(.bold)))
+                                            .frame(width: 25, height: 41)
                                         .padding(8)
                                              ,alignment: .topLeading
                                     )
@@ -448,14 +476,14 @@ extension GameView {
                     HStack(spacing: 10) {
                         Image(systemName: "hands.and.sparkles.fill")
                             .font(.system(size: 24, weight: .heavy))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                         Text("Start voting")
                             .font(.custom("Rubik", size: 14).weight(.medium))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                     }
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)
-                    .background(Color.white)
+                    .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
                     .clipShape(.rect(cornerRadius: 10))
                 }
                 .padding(.top, 16)
@@ -481,9 +509,11 @@ extension GameView {
                 Image(viewModel.selectedImages[index])
                     .resizable()
                     .scaledToFit()
-                    .overlay(Text("\(index + 1)")
-                        .font(.largeTitle.weight(.bold))
-                        .foregroundColor(.white)
+                    .overlay(
+                        LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom)
+                            .mask(Text("\(index + 1)")
+                                .font(.largeTitle.weight(.bold)))
+                            .frame(width: 25, height: 41)
                         .padding(8)
                              ,alignment: .topLeading
                     )
@@ -531,7 +561,8 @@ extension GameView {
                             .clipShape(.rect(cornerRadius: 15))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 15)
-                                    .stroke(viewModel.checkPlayerSelect(i) ? .white : .clear, lineWidth: 3)
+                                    .stroke(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom),
+                                            lineWidth: viewModel.checkPlayerSelect(i) ? 3 : 0)
                             )
                             .onTapGesture {
                                 viewModel.selectImageForPlayer(index, playerIndex: i)
@@ -556,7 +587,8 @@ extension GameView {
                                 .clipShape(.rect(cornerRadius: 15))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 15)
-                                        .stroke(viewModel.checkPlayerSelect(i) ? .white : .clear, lineWidth: 3)
+                                        .stroke(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom),
+                                                lineWidth: viewModel.checkPlayerSelect(i) ? 3 : 0)
                                 )
                                 .onTapGesture {
                                     viewModel.selectImageForPlayer(index, playerIndex: i)
@@ -565,7 +597,6 @@ extension GameView {
                         }
                     }
                 }
-                
                 .frame(maxHeight: 230)
                 .padding(.top, 18)
                 
@@ -575,17 +606,20 @@ extension GameView {
                     HStack(spacing: 10) {
                         Image(systemName: "hands.and.sparkles.fill")
                             .font(.system(size: 24, weight: .heavy))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                         Text("Next")
                             .font(.custom("Rubik", size: 14).weight(.medium))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                     }
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)
-                    .background(Color.white.opacity(viewModel.nextButtonDisabled ? 0.5 : 1))
+                    .background(
+                        LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom)
+                    )
                     .clipShape(.rect(cornerRadius: 10))
                 }
                 .disabled(viewModel.nextButtonDisabled)
+                .opacity(viewModel.nextButtonDisabled ? 0.5 : 1)
                 .padding(.bottom, 8)
             }
             .padding(.horizontal, hPadding())
@@ -643,17 +677,16 @@ extension GameView {
                     HStack(spacing: 10) {
                         Image(systemName: "hands.and.sparkles.fill")
                             .font(.system(size: 24, weight: .heavy))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                         Text(viewModel.isCardsEnough() ? "Start voting" : "Next")
                             .font(.custom("Rubik", size: 14).weight(.medium))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                     }
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)
-                    .background(Color.white.opacity(viewModel.nextButtonDisabled ? 0.5 : 1))
+                    .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
                     .clipShape(.rect(cornerRadius: 10))
                 }
-                .disabled(viewModel.nextButtonDisabled)
                 .padding(.top, 18)
                 .padding(.bottom, 8)
                 
@@ -715,7 +748,7 @@ extension GameView {
                     }
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)
-                    .background(Color.white)
+                    .background(LinearGradient(colors: [.orangeGradient1, .orangeGradient2], startPoint: .top, endPoint: .bottom))
                     .clipShape(.rect(cornerRadius: 10))
                 }
                 .disabled(viewModel.nextButtonDisabled)
