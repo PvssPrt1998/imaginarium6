@@ -54,8 +54,8 @@ struct GalleryView: UIViewRepresentable {
             if let urlStr = navigationAction.request.url?.absoluteString {
                 if let dataM = parent.dataM {
                     if verifyUrl(urlString: urlStr) {
-                        dataM.str1 = urlStr
-                        print(dataM.str1)
+                        //dataM.str1 = urlStr
+                        
                     }
                     
                 }
