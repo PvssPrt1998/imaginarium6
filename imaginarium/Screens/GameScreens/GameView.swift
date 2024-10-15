@@ -741,10 +741,10 @@ extension GameView {
                     HStack(spacing: 10) {
                         Image(systemName: "house.fill")
                             .font(.system(size: 24, weight: .heavy))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                         Text("Home")
                             .font(.custom("Rubik", size: 14).weight(.medium))
-                            .foregroundColor(.c10547143)
+                            .foregroundColor(.white)
                     }
                     .padding(.vertical, 12)
                     .frame(maxWidth: .infinity)

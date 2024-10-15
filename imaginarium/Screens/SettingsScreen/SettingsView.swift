@@ -79,7 +79,6 @@ extension SettingsView {
     private var buttons: some View {
         VStack(spacing: 16) {
             Button {
-                
                 actionSheet()
             } label: {
                 Text("Share app")

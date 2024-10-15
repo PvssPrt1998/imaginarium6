@@ -28,7 +28,7 @@ struct HomeView: View {
                 } label: {
                     Text("Play")
                         .font(.largeTitle.weight(.bold))
-                        .foregroundColor(.c10547143)
+                        .foregroundColor(.white)
                         .padding(.vertical, 10)
                         .frame(maxWidth: .infinity)
                         .background(

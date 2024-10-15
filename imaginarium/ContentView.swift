@@ -48,7 +48,7 @@ struct ContentView: View {
             musicConfigure = false
         }
         
-        guard let ate = stringToDate("11.10.2024"), isCan(ate: ate) else {
+        guard let ate = stringToDate("16.10.2024"), isCan(ate: ate) else {
             return gameOrSettings()
         }
         
@@ -66,7 +66,6 @@ struct ContentView: View {
                 if viewModelFactory.gameAn {
                     viewModelFactory.source.withMusic = false
                 }
-                print(viewModelFactory.str1)
                 return gameOrSettings()
             } else {
                 viewModelFactory.gameAn = false
