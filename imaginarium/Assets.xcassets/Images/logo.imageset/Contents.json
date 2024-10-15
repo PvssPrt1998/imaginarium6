@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "1wLogo.png",
+      "filename" : "Frame 2107431138.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "1wLogo 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "1wLogo 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
